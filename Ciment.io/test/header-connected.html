@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Hi</title>
+    <!-- <script src="../script.js" defer></script> -->
+</head>
+<body>
+
+<header>
+<nav class="connected">
+    <a href="header.php"><img src="../assets/bar_logo.png" class="logo-bar" alt=""></a>
+
+    <div class="account">
+        <a href="#"><img src="../assets/settings.svg" alt=""></a>
+        <a href="#" class="logo-acc">A</a>
+    </div>
+
+</nav>
+
+</header>
+
+<div class="main stock">
+
+    <a href="#">Retour Tableau de Bord</a>
+    <h2 class="big-title">Mon stock</h2>
+
+    <div class="stock-vision">
+
+        <h3 class="subtitle">Catégorie 1 :</h3>
+
+        <div class="name-details">
+            <p>Numéro de l’article</p>
+            <p>Nom de l’article</p>
+            <p>Description</p>
+            <p>Coût/unité</p>
+            <p>Quantité</p>
+            <p>Fournisseur</p>
+            <p>Coût total</p>
+        </div> <!--display:grid-->
+
+        <div class="line">
+            <input type="number" name="numart" id="">
+            <input type="text" name="name" id="">
+            <input type="text" name="descr" id="">
+            <input type="number" name="cost" id="">
+            <input type="number" name="qte" id="">
+            <input type="text" name="fournisseur" id=""><!--retour vers les infos de contact du fournisseur au clic-->
+            <input type="number" name="finalcost">
+
+            <input type="button" value="✒️" name="modify" onclick="affichePopup(this, 'modify')">
+            <input type="button" value="Enregistrer" name="save" onclick="affichePopup(this, 'save')">
+            <input type="button" value="❌" name="suppr" onclick="affichePopup(this, 'suppr')">
+            <input type="button" value="❌" name="close" onclick="affichePopup(this, 'close')">
+
+        </div>
+
+        <div class="line">
+            <input type="number" name="numart" id="">
+            <input type="text" name="name" id="">
+            <input type="text" name="descr" id="">
+            <input type="number" name="cost" id="">
+            <input type="number" name="qte" id="">
+            <input type="text" name="fournisseur" id=""><!--retour vers les infos de contact du fournisseur au clic-->
+            <input type="number" name="finalcost">
+
+            <input type="button" value="✒️" name="modify" onclick="affichePopup(this, 'modify')">
+            <input type="button" value="❌" name="delete" onclick="affichePopup(this, 'delete')">
+        </div>
+
+        <div class="line">
+            <input type="number" name="numart" id="">
+            <input type="text" name="name" id="">
+            <input type="text" name="descr" id="">
+            <input type="number" name="cost" id="">
+            <input type="number" name="qte" id="">
+            <input type="text" name="fournisseur" id=""><!--retour vers les infos de contact du fournisseur au clic-->
+            <input type="number" name="finalcost">
+
+            <input type="button" value="✒️" name="modify" onclick="affichePopup(this, 'modify')">
+            <input type="button" value="❌" name="delete" onclick="affichePopup(this, 'delete')">
+        </div>
+
+        <h3 class="subtitle">Catégorie 2 :</h3>
+
+        <div class="name-details">
+            <p>Numéro de l’article</p>
+            <p>Nom de l’article</p>
+            <p>Description</p>
+            <p>Coût/unité</p>
+            <p>Quantité</p>
+            <p>Fournisseur</p>
+            <p>Coût total</p>
+        </div> <!--display:grid-->
+
+        <div class="line">
+            <input type="number" name="numart" id="">
+            <input type="text" name="name" id="">
+            <input type="text" name="descr" id="">
+            <input type="number" name="cost" id="">
+            <input type="number" name="qte" id="">
+            <input type="text" name="fournisseur" id=""><!--retour vers les infos de contact du fournisseur au clic-->
+            <input type="number" name="finalcost">
+
+            <input type="button" value="✒️" name="modify" onclick="affichePopup(this, 'modify')">
+            <input type="button" value="❌" name="delete" onclick="affichePopup(this, 'delete')">
+        </div>
+
+    </div>
+
+</div>
+
+<div id="popup"></div>
+
+<script>
+    function affichePopup(button, action) {
+        var div = document.getElementById("popup");
+        div.classList.toggle("popup");
+
+        switch(action) {
+            case "modify":
+                // Ajoutez ici le code pour l'action "modify"
+                break;
+            case "delete":
+                // Ajoutez ici le code pour l'action "delete"
+                break;
+            case "save":
+                // Ajoutez ici le code pour l'action "save"
+                break;
+            case "suppr":
+                // Ajoutez ici le code pour l'action "suppr"
+                break;
+        }
+    }
+</script>
+
+</body>
+</html>

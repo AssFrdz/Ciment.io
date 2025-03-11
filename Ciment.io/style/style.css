@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,::before,::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Jost";
+    color:black;
+}
+
+:root{
+    --blue:#014BA8;
+    --light-blue:#C3D6FF;
+
+}
+
+p{
+    font-family: "Jost";
+}
+
+.btn-white{
+    border-radius: 30px;
+    border:2px solid #014BA8;
+}
+
+.btn-blue{
+    background-color: var(--blue);
+    border-radius: 30px;
+    color:white;
+    font-size:25px;
+    padding:7px 20px;
+    font-weight:500;
+    text-decoration: none;
+    text-align: center;
+    width:fit-content;
+    margin:auto;
+}
+
+.main{
+    padding:5rem 5rem;
+}
+
+
+nav.visitor{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index:1000;
+    width:100%;
+    margin-top: 0;
+    background-color: white;
+}
+
+img.logo-bar{
+width: 19.875rem;
+height: 6.375rem;
+object-fit: contain;
+object-position: center;
+}
+
+nav.visitor div a{
+    font-size:1.563rem;
+    padding: 7px 20px;
+    margin:10px 15px;
+    text-decoration: none;
+    font-weight:500;
+}
+
+nav.connected {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+nav.connected .account{
+    padding:2rem;
+}
+
+nav.connected .account .logo-acc{
+    padding:0.5rem 0.9rem;
+    background-color: #014BA8;
+    border-radius: 40px;
+    position:relative;
+    bottom:0.9rem;
+    color:white;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+
+.bloc-1-home {
+   
+    width: 100%;
+    height: 750px;
+    background-image: 
+        url(../assets/Rectangle-removebg-preview.png),
+        linear-gradient(180deg, transparent 48.49%, #C3D6FF 85.99%);
+    background-position: left bottom, left bottom; /* Position des deux arrière-plans */
+    background-repeat: no-repeat, no-repeat; /* Répétition des deux arrière-plans */
+    background-size: 55rem, 100%; /* Taille des deux arrière-plans */
+    display: flex;
+    justify-content:space-between;
+}
+
+.title-font-fancy{
+    font-family: "Josefin Slab";
+    font-weight: 500;
+    width:40rem;
+    font-size:52px;
+    padding : 2rem 0;
+}
+
+.bloc-1-home .logo{
+    width:40%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.logo-round{
+    margin: 0 auto;
+    width:30rem;
+}
+
+
+/* Page stock */
+
+.big-title{
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.subtitle{
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.stock .stock-vision{
+    padding-left:1rem;
+}
+.stock .stock-vision .name-details{
+    padding:0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+}
+.stock .stock-vision .name-details p{
+    padding:0.5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.stock .stock-vision .line{
+    padding:0.1rem;
+    margin:1rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+    background-color: #B4B4B4;
+    border-radius: 2rem;
+
+}
+.stock .stock-vision .line input{
+    margin:0.5rem;
+    border:none;
+    border-radius: 2rem;
+    padding:0.5rem 1rem;
+}
+
+
+.stock-page-view{
+    transform: scale(0.5);
+    animation:agrandir 5s infinite alternate;
+    border:2px solid black;
+    border-radius: 3rem;
+    padding:1rem;
+    width:90rem;
+    position:relative;
+    bottom:7rem;
+    right:7rem;
+    
+}
+
+
+.cursor{
+
+    position:relative;
+    top:5rem;
+    width:1.5rem;
+    animation:balader 5s infinite alternate;
+    z-index:1000;
+}
+
+.main.board{
+    width:100%;
+    padding-top:1rem;
+
+}
+
+.grid{
+    width:100%;
+    display: flex;
+}
+
+.grid div{
+    display: flex;
+    flex-direction: column;
+    width:33.333%;
+}
+
+.grid div a{
+    margin:0.5rem;
+    background-color: aliceblue;
+    text-decoration: none;
+    display: flex;
+    align-items: end;
+    padding:1rem;
+    border-radius: 1rem;
+    box-shadow:10px 10px 10px #e4e4e4;
+}
+
+.grid .bloc-1 a:nth-child(1){
+    height:13rem;
+    background: linear-gradient(180deg, #F8DDDD 0%, #82B9FF 100%);
+}
+
+.grid .bloc-1 a:nth-child(2){
+    background-color: #FFD2D2;
+    height:17rem;
+
+}
+
+.grid .bloc-2 a:nth-child(1){
+    height:15rem;
+    background-color: #BEDBFF;
+}
+
+.grid .bloc-2 a:nth-child(2){
+    height:15rem;
+    background: linear-gradient(180deg, #FFD2D2 0%, #F8FFB9 100%);
+
+}
+
+.grid .bloc-3 a:nth-child(1){
+    height:10rem;
+    background: linear-gradient(180deg, #EBBCE6 0%, #FF9A9A 100%);
+}
+
+.grid .bloc-3 a:nth-child(2){
+    height:14rem;
+    background-color: #C4E3BF;
+}
+.grid .bloc-3 a:nth-child(3){
+    height:5rem;
+   background-color: #F8FFB9;
+}
+
+.fancy-subtitle{
+    font-family: "Josefin Slab";
+    font-size: 1.5rem;
+}
+
+.popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Noir avec 30% d'opacité */
+    z-index: 2;
+}
+
+/*pricing*/
+
+.main.pricing .boxes{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main.pricing .boxes div{
+    margin:1rem;
+    width:25rem;
+    padding:2rem;
+    height:27rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border:4px solid var(--blue);
+    border-radius:2rem;
+}
+
+.main.pricing .boxes div .btn-blue{
+    position:relative;
+    top:3rem;
+}
+
+.btn-blue.gold{
+    background-color: #D1B96A;
+}
+
+.main.pricing .boxes div.box-gold{
+    border:4px solid #D1B96A;
+}
+
+
+ @keyframes agrandir{
+    0%{
+        transform:scale(0.5);
+    }
+    50%{
+        transform:scale(0.55);
+    }
+    100%{
+        transform: scale(0.45);
+    }
+    }
+
+
+ 
+ @keyframes balader{
+    
+        0% {
+          transform: translate(0, 50vh);
+        }
+        25% {
+          transform: translate(25vw, 30vh);
+        }
+        50% {
+          transform: translate(50vw, 70vh);
+        }
+        75% {
+          transform: translate(75vw, 20vh);
+        }
+        100% {
+          transform: translate(100vw, 50vh);
+             
+ }
+
+ }
