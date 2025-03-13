@@ -39,7 +39,7 @@
             case 2: require_once('view/pricing.php');
             break;
 
-            case 3: require_once('view/login.php');
+            case 3: require_once('view/connexion.php');
             break;
 
             case 4: require_once('view/signup.php');
